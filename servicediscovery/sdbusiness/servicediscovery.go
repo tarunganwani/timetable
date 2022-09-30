@@ -1,0 +1,105 @@
+package sdbusiness
+
+import (
+	"errors"
+	"fmt"
+	"servicediscovery/sdmodel"
+	"time"
+)
+
+//TODO MAJOR - create a go routine for maintainig the service registry for alive connections
+//TODO MAJOR - check if the service data slice access needs to be protected by mutex
+
+// func finddata
+func findSliceIndex(srvData []sdmodel.ServiceData, address, port string) int {
+	for idx, val := range srvData {
+		if val.Address == address && val.Port == port {
+			return idx
+		}
+	}
+	return -1
+}
+
+func createAndGetNewServiceData(svcname, address, port string) sdmodel.ServiceData {
+
+	newdata := sdmodel.ServiceData{
+		Name:                  svcname,
+		Address:               address,
+		Port:                  port,
+		LastHeartbeatReceived: time.Now(),
+	}
+	return newdata
+}
+
+func RegisterService(svcname, address, port string) error {
+
+	//TODO consider validating host and port.
+	//In case these are not valid, maybe throw an error
+
+	srvdata, found := sdmodel.ServiceDiscoveryMap[svcname]
+	if !found {
+		newdata := createAndGetNewServiceData(svcname, address, port)
+		sdmodel.ServiceDiscoveryMap[svcname] = append(sdmodel.ServiceDiscoveryMap[svcname], newdata)
+	} else {
+		//check if address and port do not already exist in the list
+		idx := findSliceIndex(srvdata, address, port)
+		//in case not, add it to the slice
+		if idx == -1 {
+			newdata := createAndGetNewServiceData(svcname, address, port)
+			sdmodel.ServiceDiscoveryMap[svcname] = append(sdmodel.ServiceDiscoveryMap[svcname], newdata)
+		} else {
+			//otherwise just update the timestamp (treat it as a heart beat)
+			sdmodel.ServiceDiscoveryMap[svcname][idx].LastHeartbeatReceived = time.Now()
+		}
+	}
+	return nil
+}
+
+func DeregisterService(svcname, address, port string) error {
+
+	srvdata, found := sdmodel.ServiceDiscoveryMap[svcname]
+	if !found {
+
+		msg := fmt.Sprintf("%s service not registered ", svcname)
+		return errors.New(msg)
+	}
+	idx := findSliceIndex(srvdata, address, port)
+	if idx == -1 {
+		msg := fmt.Sprintf("%s service not registered [host %s port %s] ", svcname, address, port)
+		return errors.New(msg)
+	}
+	//remove the service and host from slice
+	newSrvdata := Remove(srvdata, idx)
+	sdmodel.ServiceDiscoveryMap[svcname] = newSrvdata
+	return nil
+}
+
+func ServiceKeepalive(svcname, address, port string) error {
+
+	srvdata, found := sdmodel.ServiceDiscoveryMap[svcname]
+	if !found {
+		msg := fmt.Sprintf("%s service not found ", svcname)
+		return errors.New(msg)
+	}
+
+	idx := findSliceIndex(srvdata, address, port)
+	if idx == -1 {
+		msg := fmt.Sprintf("%s service not found [host %s port %s] ", svcname, address, port)
+		return errors.New(msg)
+	}
+	sdmodel.ServiceDiscoveryMap[svcname][idx].LastHeartbeatReceived = time.Now()
+	return nil
+}
+
+func FetchServiceAddress(svcname string) (sdmodel.ServiceData, error) {
+
+	srvdata, found := sdmodel.ServiceDiscoveryMap[svcname]
+	if !found || srvdata == nil || len(srvdata) == 0 {
+		msg := fmt.Sprintf("%s service not found ", svcname)
+		return sdmodel.ServiceData{}, errors.New(msg)
+	}
+
+	//TODO load balancer logic could go here in the future
+	//For now just return the first host found in the slice
+	return srvdata[0], nil
+}

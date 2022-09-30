@@ -1,0 +1,92 @@
+
+### Docker
+
+sudo docker start <container id>
+sudo docker restart <container id>
+sudo docker stop <container id>
+sudo docker logs <container id>
+sudo docker rm <container id>
+sudo docker container prune
+sudo docker network prune
+sudo docker system prune
+sudo docker ps -a
+sudo docker exec -it 7162f24bb5d8 bash
+sudo docker run --name timetable-pg -p 5432:5432 --mount timetable_pgdata:/var/lib/postgresql/data -e POSTGRES_PASSWORD=timetable-pg -d postgres
+
+# docker volumes
+
+sudo docker volume create timetable_pgdata
+sudo docker volume inspect timetable_pgdata
+
+### psql 
+psql -h <host> -p <port> -U <user>
+psql -h 127.0.0.1 -p 5432 -U postgres
+
+### psql with url
+psql postgresql://<uname>:<pwd>@<ip>:<port>/postgres
+psql postgresql://postgres:timetable_pg@localhost:5432/postgres
+
+create database timetable;
+create table books(bookid int primary key, bookname varchar(100));
+insert into books values (1, 'Book 1');
+insert into books values (2, 'Book 2');
+
+
+# denormalized data store
+
+{
+	"school":"vvhs",
+	"grade":"1",
+	"div":"D",
+	"days":[
+		{
+			"name"	 : "Monday"
+			"uniform": "REGULAR",
+			"periods":[
+				{
+					"type" : "1H",
+					"subject" : "Math",
+					"book" : "Book1"
+				},
+				{
+					"type" : "1H",
+					"subject" : "English",
+					"book" : "Book2"
+				},
+				{
+					"type" : "SHORT_BREAK",
+					"name" : "Recess1"
+				},
+				{
+					"type" : "1H",
+					"subject" : "Computers",
+					"book" : "Book3"
+				}
+			]
+		},
+		{
+			"name" : "Tuesday",
+			"uniform":"PE",
+			"periods":[
+				{
+					"type" : "1H",
+					"subject" : "Math",
+					"book" : "Book1"
+				},
+				{
+					"type" : "1H",
+					"subject" : "PE"
+				},
+				{
+					"type" : "SHORT_BREAK",
+					"name" : "Recess1"
+				},
+				{
+					"type" : "1H",
+					"subject" : "Computers",
+					"book" : "Book3"
+				}
+			]
+		}
+	]
+}

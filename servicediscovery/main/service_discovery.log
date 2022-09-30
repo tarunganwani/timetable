@@ -1,0 +1,1034 @@
+2022/09/29 05:02:11 Listening on  localhost:8000
+2022/09/29 05:02:11 Initialing http routes..
+2022/09/29 05:02:11 Registering service discovery handlers
+2022/09/29 05:02:11 Handlers registered
+2022/09/29 05:35:40 Listening on  localhost:8000
+2022/09/29 05:35:40 Initialing http routes..
+2022/09/29 05:35:40 Registering service discovery handlers
+2022/09/29 05:35:40 Handlers registered
+2022/09/30 10:34:24 Listening on  localhost:8000
+2022/09/30 10:34:24 Initialing http routes..
+2022/09/30 10:34:24 Registering service discovery handlers
+2022/09/30 10:34:24 Handlers registered
+2022/09/30 10:34:52 Handle register request
+2022/09/30 10:34:52 ok
+2022/09/30 10:34:57 Handle register request
+2022/09/30 10:34:57 ok
+2022/09/30 10:35:02 Handle register request
+2022/09/30 10:35:02 ok
+2022/09/30 10:54:43 Listening on  localhost:8000
+2022/09/30 10:54:43 Initialing http routes..
+2022/09/30 10:54:43 Registering service discovery handlers
+2022/09/30 10:54:43 Handlers registered
+2022/09/30 10:54:44 Handle register request
+2022/09/30 10:54:44 ok
+2022/09/30 10:54:46 Handle register request
+2022/09/30 10:54:46 ok
+2022/09/30 10:54:48 Handle register request
+2022/09/30 10:54:48 ok
+2022/09/30 10:54:50 Handle register request
+2022/09/30 10:54:50 ok
+2022/09/30 10:54:52 Handle register request
+2022/09/30 10:54:52 ok
+2022/09/30 10:54:54 Handle register request
+2022/09/30 10:54:54 ok
+2022/09/30 10:54:56 Handle register request
+2022/09/30 10:54:56 ok
+2022/09/30 10:54:58 Handle register request
+2022/09/30 10:54:58 ok
+2022/09/30 10:55:00 Handle register request
+2022/09/30 10:55:00 ok
+2022/09/30 10:55:02 Handle register request
+2022/09/30 10:55:02 ok
+2022/09/30 10:55:04 Handle register request
+2022/09/30 10:55:04 ok
+2022/09/30 10:55:06 Handle register request
+2022/09/30 10:55:06 ok
+2022/09/30 10:55:08 Handle register request
+2022/09/30 10:55:08 ok
+2022/09/30 10:55:10 Handle register request
+2022/09/30 10:55:10 ok
+2022/09/30 10:55:12 Handle register request
+2022/09/30 10:55:12 ok
+2022/09/30 10:55:14 Handle register request
+2022/09/30 10:55:14 ok
+2022/09/30 10:56:07 Handle register request
+2022/09/30 10:56:07 ok
+2022/09/30 10:56:09 Handle register request
+2022/09/30 10:56:09 ok
+2022/09/30 10:56:11 Handle register request
+2022/09/30 10:56:11 ok
+2022/09/30 10:56:13 Handle register request
+2022/09/30 10:56:13 ok
+2022/09/30 10:56:15 Handle register request
+2022/09/30 10:56:15 ok
+2022/09/30 10:56:17 Handle register request
+2022/09/30 10:56:17 ok
+2022/09/30 10:56:19 Handle register request
+2022/09/30 10:56:19 ok
+2022/09/30 10:56:21 Handle register request
+2022/09/30 10:56:21 ok
+2022/09/30 10:56:23 Handle register request
+2022/09/30 10:56:23 ok
+2022/09/30 10:56:25 Handle register request
+2022/09/30 10:56:25 ok
+2022/09/30 10:56:27 Handle register request
+2022/09/30 10:56:27 ok
+2022/09/30 10:56:29 Handle register request
+2022/09/30 10:56:29 ok
+2022/09/30 10:56:31 Handle register request
+2022/09/30 10:56:31 ok
+2022/09/30 10:56:33 Handle register request
+2022/09/30 10:56:33 ok
+2022/09/30 10:56:35 Handle register request
+2022/09/30 10:56:35 ok
+2022/09/30 10:56:37 Handle register request
+2022/09/30 10:56:37 ok
+2022/09/30 10:56:39 Handle register request
+2022/09/30 10:56:39 ok
+2022/09/30 10:56:41 Handle register request
+2022/09/30 10:56:41 ok
+2022/09/30 10:56:43 Handle register request
+2022/09/30 10:56:43 ok
+2022/09/30 10:56:45 Handle register request
+2022/09/30 10:56:45 ok
+2022/09/30 10:56:47 Handle register request
+2022/09/30 10:56:47 ok
+2022/09/30 10:56:49 Handle register request
+2022/09/30 10:56:49 ok
+2022/09/30 10:56:51 Handle register request
+2022/09/30 10:56:51 ok
+2022/09/30 10:56:53 Handle register request
+2022/09/30 10:56:53 ok
+2022/09/30 10:56:55 Handle register request
+2022/09/30 10:56:55 ok
+2022/09/30 10:59:03 Listening on  localhost:8000
+2022/09/30 10:59:03 Initialing http routes..
+2022/09/30 10:59:03 Registering service discovery handlers
+2022/09/30 10:59:03 Handlers registered
+2022/09/30 10:59:03 Got heartbeat
+2022/09/30 10:59:03 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:03 ok
+2022/09/30 10:59:05 Got heartbeat
+2022/09/30 10:59:05 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:05 ok
+2022/09/30 10:59:07 Got heartbeat
+2022/09/30 10:59:07 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:07 ok
+2022/09/30 10:59:09 Got heartbeat
+2022/09/30 10:59:09 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:09 ok
+2022/09/30 10:59:11 Got heartbeat
+2022/09/30 10:59:11 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:11 ok
+2022/09/30 10:59:13 Got heartbeat
+2022/09/30 10:59:13 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:13 ok
+2022/09/30 10:59:15 Got heartbeat
+2022/09/30 10:59:15 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:15 ok
+2022/09/30 10:59:17 Got heartbeat
+2022/09/30 10:59:17 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:17 ok
+2022/09/30 10:59:19 Got heartbeat
+2022/09/30 10:59:19 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:19 ok
+2022/09/30 10:59:21 Got heartbeat
+2022/09/30 10:59:21 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:21 ok
+2022/09/30 10:59:23 Got heartbeat
+2022/09/30 10:59:23 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:23 ok
+2022/09/30 10:59:25 Got heartbeat
+2022/09/30 10:59:25 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:25 ok
+2022/09/30 10:59:27 Got heartbeat
+2022/09/30 10:59:27 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:27 ok
+2022/09/30 10:59:29 Got heartbeat
+2022/09/30 10:59:29 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:29 ok
+2022/09/30 10:59:31 Got heartbeat
+2022/09/30 10:59:31 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:31 ok
+2022/09/30 10:59:33 Got heartbeat
+2022/09/30 10:59:33 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:33 ok
+2022/09/30 10:59:35 Got heartbeat
+2022/09/30 10:59:35 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:35 ok
+2022/09/30 10:59:37 Got heartbeat
+2022/09/30 10:59:37 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:37 ok
+2022/09/30 10:59:41 Listening on  localhost:8000
+2022/09/30 10:59:41 Initialing http routes..
+2022/09/30 10:59:41 Registering service discovery handlers
+2022/09/30 10:59:41 Handlers registered
+2022/09/30 10:59:41 Got heartbeat
+2022/09/30 10:59:41 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:41 ok
+2022/09/30 10:59:43 Got heartbeat
+2022/09/30 10:59:43 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:43 ok
+2022/09/30 10:59:45 Got heartbeat
+2022/09/30 10:59:45 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:45 ok
+2022/09/30 10:59:47 Got heartbeat
+2022/09/30 10:59:47 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:47 ok
+2022/09/30 10:59:49 Got heartbeat
+2022/09/30 10:59:49 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:49 ok
+2022/09/30 10:59:51 Got heartbeat
+2022/09/30 10:59:51 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:51 ok
+2022/09/30 10:59:53 Got heartbeat
+2022/09/30 10:59:53 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:53 ok
+2022/09/30 10:59:55 Got heartbeat
+2022/09/30 10:59:55 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:55 ok
+2022/09/30 10:59:57 Got heartbeat
+2022/09/30 10:59:57 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:57 ok
+2022/09/30 10:59:59 Got heartbeat
+2022/09/30 10:59:59 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 10:59:59 ok
+2022/09/30 11:00:01 Got heartbeat
+2022/09/30 11:00:01 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:01 ok
+2022/09/30 11:00:03 Got heartbeat
+2022/09/30 11:00:03 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:03 ok
+2022/09/30 11:00:05 Got heartbeat
+2022/09/30 11:00:05 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:05 ok
+2022/09/30 11:00:07 Got heartbeat
+2022/09/30 11:00:07 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:07 ok
+2022/09/30 11:00:09 Got heartbeat
+2022/09/30 11:00:09 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:09 ok
+2022/09/30 11:00:11 Got heartbeat
+2022/09/30 11:00:11 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:11 ok
+2022/09/30 11:00:13 Got heartbeat
+2022/09/30 11:00:13 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:13 ok
+2022/09/30 11:00:15 Got heartbeat
+2022/09/30 11:00:15 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:15 ok
+2022/09/30 11:00:18 Got heartbeat
+2022/09/30 11:00:18 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:18 ok
+2022/09/30 11:00:20 Got heartbeat
+2022/09/30 11:00:20 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:20 ok
+2022/09/30 11:00:22 Got heartbeat
+2022/09/30 11:00:22 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:22 ok
+2022/09/30 11:00:24 Got heartbeat
+2022/09/30 11:00:24 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:24 ok
+2022/09/30 11:00:26 Got heartbeat
+2022/09/30 11:00:26 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:26 ok
+2022/09/30 11:00:28 Got heartbeat
+2022/09/30 11:00:28 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:28 ok
+2022/09/30 11:00:30 Got heartbeat
+2022/09/30 11:00:30 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:30 ok
+2022/09/30 11:00:32 Got heartbeat
+2022/09/30 11:00:32 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:32 ok
+2022/09/30 11:00:34 Got heartbeat
+2022/09/30 11:00:34 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:34 ok
+2022/09/30 11:00:36 Got heartbeat
+2022/09/30 11:00:36 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:36 ok
+2022/09/30 11:00:38 Got heartbeat
+2022/09/30 11:00:38 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:38 ok
+2022/09/30 11:00:40 Got heartbeat
+2022/09/30 11:00:40 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:40 ok
+2022/09/30 11:00:42 Got heartbeat
+2022/09/30 11:00:42 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:42 ok
+2022/09/30 11:00:44 Got heartbeat
+2022/09/30 11:00:44 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:44 ok
+2022/09/30 11:00:46 Got heartbeat
+2022/09/30 11:00:46 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:46 ok
+2022/09/30 11:00:48 Got heartbeat
+2022/09/30 11:00:48 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:48 ok
+2022/09/30 11:00:50 Got heartbeat
+2022/09/30 11:00:50 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:50 ok
+2022/09/30 11:00:52 Got heartbeat
+2022/09/30 11:00:52 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:52 ok
+2022/09/30 11:00:54 Got heartbeat
+2022/09/30 11:00:54 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:54 ok
+2022/09/30 11:00:56 Got heartbeat
+2022/09/30 11:00:56 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:56 ok
+2022/09/30 11:00:58 Got heartbeat
+2022/09/30 11:00:58 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:00:58 ok
+2022/09/30 11:01:00 Got heartbeat
+2022/09/30 11:01:00 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:00 ok
+2022/09/30 11:01:02 Got heartbeat
+2022/09/30 11:01:02 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:02 ok
+2022/09/30 11:01:04 Got heartbeat
+2022/09/30 11:01:04 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:04 ok
+2022/09/30 11:01:06 Got heartbeat
+2022/09/30 11:01:06 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:06 ok
+2022/09/30 11:01:08 Got heartbeat
+2022/09/30 11:01:08 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:08 ok
+2022/09/30 11:01:10 Got heartbeat
+2022/09/30 11:01:10 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:10 ok
+2022/09/30 11:01:12 Got heartbeat
+2022/09/30 11:01:12 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:12 ok
+2022/09/30 11:01:14 Got heartbeat
+2022/09/30 11:01:14 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:14 ok
+2022/09/30 11:01:16 Got heartbeat
+2022/09/30 11:01:16 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:16 ok
+2022/09/30 11:01:18 Got heartbeat
+2022/09/30 11:01:18 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:18 ok
+2022/09/30 11:01:20 Got heartbeat
+2022/09/30 11:01:20 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:20 ok
+2022/09/30 11:01:22 Got heartbeat
+2022/09/30 11:01:22 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:22 ok
+2022/09/30 11:01:24 Got heartbeat
+2022/09/30 11:01:24 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:24 ok
+2022/09/30 11:01:26 Got heartbeat
+2022/09/30 11:01:26 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:26 ok
+2022/09/30 11:01:28 Got heartbeat
+2022/09/30 11:01:28 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:28 ok
+2022/09/30 11:01:30 Got heartbeat
+2022/09/30 11:01:30 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:30 ok
+2022/09/30 11:01:32 Got heartbeat
+2022/09/30 11:01:32 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:32 ok
+2022/09/30 11:01:34 Got heartbeat
+2022/09/30 11:01:34 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:34 ok
+2022/09/30 11:01:36 Got heartbeat
+2022/09/30 11:01:36 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:36 ok
+2022/09/30 11:01:38 Got heartbeat
+2022/09/30 11:01:38 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:38 ok
+2022/09/30 11:01:40 Got heartbeat
+2022/09/30 11:01:40 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:40 ok
+2022/09/30 11:01:42 Got heartbeat
+2022/09/30 11:01:42 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:42 ok
+2022/09/30 11:01:44 Got heartbeat
+2022/09/30 11:01:44 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:44 ok
+2022/09/30 11:01:46 Got heartbeat
+2022/09/30 11:01:46 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:46 ok
+2022/09/30 11:01:48 Got heartbeat
+2022/09/30 11:01:48 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:48 ok
+2022/09/30 11:01:50 Got heartbeat
+2022/09/30 11:01:50 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:50 ok
+2022/09/30 11:01:52 Got heartbeat
+2022/09/30 11:01:52 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:52 ok
+2022/09/30 11:01:54 Got heartbeat
+2022/09/30 11:01:54 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:54 ok
+2022/09/30 11:01:56 Got heartbeat
+2022/09/30 11:01:56 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:56 ok
+2022/09/30 11:01:58 Got heartbeat
+2022/09/30 11:01:58 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:01:58 ok
+2022/09/30 11:02:00 Got heartbeat
+2022/09/30 11:02:00 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:00 ok
+2022/09/30 11:02:02 Got heartbeat
+2022/09/30 11:02:02 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:02 ok
+2022/09/30 11:02:04 Got heartbeat
+2022/09/30 11:02:04 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:04 ok
+2022/09/30 11:02:06 Got heartbeat
+2022/09/30 11:02:06 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:06 ok
+2022/09/30 11:02:08 Got heartbeat
+2022/09/30 11:02:08 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:08 ok
+2022/09/30 11:02:10 Got heartbeat
+2022/09/30 11:02:10 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:10 ok
+2022/09/30 11:02:12 Got heartbeat
+2022/09/30 11:02:12 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:12 ok
+2022/09/30 11:02:14 Got heartbeat
+2022/09/30 11:02:14 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:14 ok
+2022/09/30 11:02:16 Got heartbeat
+2022/09/30 11:02:16 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:16 ok
+2022/09/30 11:02:18 Got heartbeat
+2022/09/30 11:02:18 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:18 ok
+2022/09/30 11:02:20 Got heartbeat
+2022/09/30 11:02:20 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:20 ok
+2022/09/30 11:02:22 Got heartbeat
+2022/09/30 11:02:22 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:22 ok
+2022/09/30 11:02:24 Got heartbeat
+2022/09/30 11:02:24 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:24 ok
+2022/09/30 11:02:26 Got heartbeat
+2022/09/30 11:02:26 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:26 ok
+2022/09/30 11:02:28 Got heartbeat
+2022/09/30 11:02:28 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:28 ok
+2022/09/30 11:02:30 Got heartbeat
+2022/09/30 11:02:30 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:30 ok
+2022/09/30 11:02:32 Got heartbeat
+2022/09/30 11:02:32 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:32 ok
+2022/09/30 11:02:34 Got heartbeat
+2022/09/30 11:02:34 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:34 ok
+2022/09/30 11:02:36 Got heartbeat
+2022/09/30 11:02:36 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:36 ok
+2022/09/30 11:02:38 Got heartbeat
+2022/09/30 11:02:38 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:38 ok
+2022/09/30 11:02:40 Got heartbeat
+2022/09/30 11:02:40 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:40 ok
+2022/09/30 11:02:42 Got heartbeat
+2022/09/30 11:02:42 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:42 ok
+2022/09/30 11:02:44 Got heartbeat
+2022/09/30 11:02:44 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:44 ok
+2022/09/30 11:02:46 Got heartbeat
+2022/09/30 11:02:46 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:46 ok
+2022/09/30 11:02:48 Got heartbeat
+2022/09/30 11:02:48 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:48 ok
+2022/09/30 11:02:50 Got heartbeat
+2022/09/30 11:02:50 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:50 ok
+2022/09/30 11:02:52 Got heartbeat
+2022/09/30 11:02:52 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:52 ok
+2022/09/30 11:02:54 Got heartbeat
+2022/09/30 11:02:54 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:54 ok
+2022/09/30 11:02:56 Got heartbeat
+2022/09/30 11:02:56 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:56 ok
+2022/09/30 11:02:58 Got heartbeat
+2022/09/30 11:02:58 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:02:58 ok
+2022/09/30 11:03:00 Got heartbeat
+2022/09/30 11:03:00 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:00 ok
+2022/09/30 11:03:02 Got heartbeat
+2022/09/30 11:03:02 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:02 ok
+2022/09/30 11:03:04 Got heartbeat
+2022/09/30 11:03:04 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:04 ok
+2022/09/30 11:03:06 Got heartbeat
+2022/09/30 11:03:06 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:06 ok
+2022/09/30 11:03:08 Got heartbeat
+2022/09/30 11:03:08 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:08 ok
+2022/09/30 11:03:10 Got heartbeat
+2022/09/30 11:03:10 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:10 ok
+2022/09/30 11:03:12 Got heartbeat
+2022/09/30 11:03:12 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:12 ok
+2022/09/30 11:03:14 Got heartbeat
+2022/09/30 11:03:14 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:14 ok
+2022/09/30 11:03:16 Got heartbeat
+2022/09/30 11:03:16 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:16 ok
+2022/09/30 11:03:18 Got heartbeat
+2022/09/30 11:03:18 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:18 ok
+2022/09/30 11:03:20 Got heartbeat
+2022/09/30 11:03:20 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:20 ok
+2022/09/30 11:03:22 Got heartbeat
+2022/09/30 11:03:22 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:22 ok
+2022/09/30 11:03:24 Got heartbeat
+2022/09/30 11:03:24 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:24 ok
+2022/09/30 11:03:26 Got heartbeat
+2022/09/30 11:03:26 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:26 ok
+2022/09/30 11:03:28 Got heartbeat
+2022/09/30 11:03:28 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:28 ok
+2022/09/30 11:03:30 Got heartbeat
+2022/09/30 11:03:30 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:30 ok
+2022/09/30 11:03:32 Got heartbeat
+2022/09/30 11:03:32 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:32 ok
+2022/09/30 11:03:34 Got heartbeat
+2022/09/30 11:03:34 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:34 ok
+2022/09/30 11:03:36 Got heartbeat
+2022/09/30 11:03:36 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:36 ok
+2022/09/30 11:03:38 Got heartbeat
+2022/09/30 11:03:38 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:38 ok
+2022/09/30 11:03:40 Got heartbeat
+2022/09/30 11:03:40 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:40 ok
+2022/09/30 11:03:42 Got heartbeat
+2022/09/30 11:03:42 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:42 ok
+2022/09/30 11:03:44 Got heartbeat
+2022/09/30 11:03:44 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:44 ok
+2022/09/30 11:03:46 Got heartbeat
+2022/09/30 11:03:46 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:46 ok
+2022/09/30 11:03:48 Got heartbeat
+2022/09/30 11:03:48 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:48 ok
+2022/09/30 11:03:50 Got heartbeat
+2022/09/30 11:03:50 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:50 ok
+2022/09/30 11:03:52 Got heartbeat
+2022/09/30 11:03:52 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:52 ok
+2022/09/30 11:03:54 Got heartbeat
+2022/09/30 11:03:54 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:54 ok
+2022/09/30 11:03:56 Got heartbeat
+2022/09/30 11:03:56 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:56 ok
+2022/09/30 11:03:58 Got heartbeat
+2022/09/30 11:03:58 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:03:58 ok
+2022/09/30 11:04:00 Got heartbeat
+2022/09/30 11:04:00 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:00 ok
+2022/09/30 11:04:02 Got heartbeat
+2022/09/30 11:04:02 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:02 ok
+2022/09/30 11:04:04 Got heartbeat
+2022/09/30 11:04:04 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:04 ok
+2022/09/30 11:04:06 Got heartbeat
+2022/09/30 11:04:06 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:06 ok
+2022/09/30 11:04:08 Got heartbeat
+2022/09/30 11:04:08 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:08 ok
+2022/09/30 11:04:10 Got heartbeat
+2022/09/30 11:04:10 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:10 ok
+2022/09/30 11:04:12 Got heartbeat
+2022/09/30 11:04:12 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:12 ok
+2022/09/30 11:04:14 Got heartbeat
+2022/09/30 11:04:14 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:14 ok
+2022/09/30 11:04:16 Got heartbeat
+2022/09/30 11:04:16 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:16 ok
+2022/09/30 11:04:18 Got heartbeat
+2022/09/30 11:04:18 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:18 ok
+2022/09/30 11:04:20 Got heartbeat
+2022/09/30 11:04:20 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:20 ok
+2022/09/30 11:04:22 Got heartbeat
+2022/09/30 11:04:22 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:22 ok
+2022/09/30 11:04:24 Got heartbeat
+2022/09/30 11:04:24 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:24 ok
+2022/09/30 11:04:26 Got heartbeat
+2022/09/30 11:04:26 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:26 ok
+2022/09/30 11:04:28 Got heartbeat
+2022/09/30 11:04:28 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:28 ok
+2022/09/30 11:04:30 Got heartbeat
+2022/09/30 11:04:30 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:30 ok
+2022/09/30 11:04:32 Got heartbeat
+2022/09/30 11:04:32 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:32 ok
+2022/09/30 11:04:34 Got heartbeat
+2022/09/30 11:04:34 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:34 ok
+2022/09/30 11:04:36 Got heartbeat
+2022/09/30 11:04:36 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:36 ok
+2022/09/30 11:04:38 Got heartbeat
+2022/09/30 11:04:38 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:38 ok
+2022/09/30 11:04:40 Got heartbeat
+2022/09/30 11:04:40 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:40 ok
+2022/09/30 11:04:42 Got heartbeat
+2022/09/30 11:04:42 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:42 ok
+2022/09/30 11:04:44 Got heartbeat
+2022/09/30 11:04:44 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:44 ok
+2022/09/30 11:04:46 Got heartbeat
+2022/09/30 11:04:46 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:46 ok
+2022/09/30 11:04:48 Got heartbeat
+2022/09/30 11:04:48 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:48 ok
+2022/09/30 11:04:50 Got heartbeat
+2022/09/30 11:04:50 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:50 ok
+2022/09/30 11:04:52 Got heartbeat
+2022/09/30 11:04:52 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:52 ok
+2022/09/30 11:04:54 Got heartbeat
+2022/09/30 11:04:54 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:54 ok
+2022/09/30 11:04:56 Got heartbeat
+2022/09/30 11:04:56 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:56 ok
+2022/09/30 11:04:58 Got heartbeat
+2022/09/30 11:04:58 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:04:58 ok
+2022/09/30 11:05:00 Got heartbeat
+2022/09/30 11:05:00 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:00 ok
+2022/09/30 11:05:02 Got heartbeat
+2022/09/30 11:05:02 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:02 ok
+2022/09/30 11:05:04 Got heartbeat
+2022/09/30 11:05:04 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:04 ok
+2022/09/30 11:05:06 Got heartbeat
+2022/09/30 11:05:06 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:06 ok
+2022/09/30 11:05:08 Got heartbeat
+2022/09/30 11:05:08 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:08 ok
+2022/09/30 11:05:10 Got heartbeat
+2022/09/30 11:05:10 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:10 ok
+2022/09/30 11:05:12 Got heartbeat
+2022/09/30 11:05:12 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:12 ok
+2022/09/30 11:05:14 Got heartbeat
+2022/09/30 11:05:14 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:14 ok
+2022/09/30 11:05:16 Got heartbeat
+2022/09/30 11:05:16 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:16 ok
+2022/09/30 11:05:19 Got heartbeat
+2022/09/30 11:05:19 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:19 ok
+2022/09/30 11:05:21 Got heartbeat
+2022/09/30 11:05:21 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:21 ok
+2022/09/30 11:05:23 Got heartbeat
+2022/09/30 11:05:23 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:23 ok
+2022/09/30 11:05:25 Got heartbeat
+2022/09/30 11:05:25 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:25 ok
+2022/09/30 11:05:27 Got heartbeat
+2022/09/30 11:05:27 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:27 ok
+2022/09/30 11:05:29 Got heartbeat
+2022/09/30 11:05:29 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:29 ok
+2022/09/30 11:05:31 Got heartbeat
+2022/09/30 11:05:31 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:31 ok
+2022/09/30 11:05:33 Got heartbeat
+2022/09/30 11:05:33 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:33 ok
+2022/09/30 11:05:35 Got heartbeat
+2022/09/30 11:05:35 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:35 ok
+2022/09/30 11:05:37 Got heartbeat
+2022/09/30 11:05:37 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:37 ok
+2022/09/30 11:05:39 Got heartbeat
+2022/09/30 11:05:39 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:39 ok
+2022/09/30 11:05:41 Got heartbeat
+2022/09/30 11:05:41 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:41 ok
+2022/09/30 11:05:43 Got heartbeat
+2022/09/30 11:05:43 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:43 ok
+2022/09/30 11:05:45 Got heartbeat
+2022/09/30 11:05:45 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:45 ok
+2022/09/30 11:05:47 Got heartbeat
+2022/09/30 11:05:47 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:47 ok
+2022/09/30 11:05:49 Got heartbeat
+2022/09/30 11:05:49 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:49 ok
+2022/09/30 11:05:51 Got heartbeat
+2022/09/30 11:05:51 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:51 ok
+2022/09/30 11:05:53 Got heartbeat
+2022/09/30 11:05:53 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:53 ok
+2022/09/30 11:05:55 Got heartbeat
+2022/09/30 11:05:55 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:55 ok
+2022/09/30 11:05:57 Got heartbeat
+2022/09/30 11:05:57 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:57 ok
+2022/09/30 11:05:59 Got heartbeat
+2022/09/30 11:05:59 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:05:59 ok
+2022/09/30 11:06:01 Got heartbeat
+2022/09/30 11:06:01 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:01 ok
+2022/09/30 11:06:03 Got heartbeat
+2022/09/30 11:06:03 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:03 ok
+2022/09/30 11:06:05 Got heartbeat
+2022/09/30 11:06:05 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:05 ok
+2022/09/30 11:06:07 Got heartbeat
+2022/09/30 11:06:07 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:07 ok
+2022/09/30 11:06:09 Got heartbeat
+2022/09/30 11:06:09 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:09 ok
+2022/09/30 11:06:11 Got heartbeat
+2022/09/30 11:06:11 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:11 ok
+2022/09/30 11:06:13 Got heartbeat
+2022/09/30 11:06:13 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:13 ok
+2022/09/30 11:06:15 Got heartbeat
+2022/09/30 11:06:15 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:15 ok
+2022/09/30 11:06:17 Got heartbeat
+2022/09/30 11:06:17 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:17 ok
+2022/09/30 11:06:19 Got heartbeat
+2022/09/30 11:06:19 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:19 ok
+2022/09/30 11:06:21 Got heartbeat
+2022/09/30 11:06:21 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:21 ok
+2022/09/30 11:06:23 Got heartbeat
+2022/09/30 11:06:23 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:23 ok
+2022/09/30 11:06:25 Got heartbeat
+2022/09/30 11:06:25 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:25 ok
+2022/09/30 11:06:27 Got heartbeat
+2022/09/30 11:06:27 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:27 ok
+2022/09/30 11:06:29 Got heartbeat
+2022/09/30 11:06:29 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:29 ok
+2022/09/30 11:06:31 Got heartbeat
+2022/09/30 11:06:31 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:31 ok
+2022/09/30 11:06:33 Got heartbeat
+2022/09/30 11:06:33 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:33 ok
+2022/09/30 11:06:35 Got heartbeat
+2022/09/30 11:06:35 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:35 ok
+2022/09/30 11:06:37 Got heartbeat
+2022/09/30 11:06:37 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:37 ok
+2022/09/30 11:06:39 Got heartbeat
+2022/09/30 11:06:39 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:39 ok
+2022/09/30 11:06:41 Got heartbeat
+2022/09/30 11:06:41 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:41 ok
+2022/09/30 11:06:43 Got heartbeat
+2022/09/30 11:06:43 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:43 ok
+2022/09/30 11:06:45 Got heartbeat
+2022/09/30 11:06:45 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:45 ok
+2022/09/30 11:06:47 Got heartbeat
+2022/09/30 11:06:47 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:47 ok
+2022/09/30 11:06:49 Got heartbeat
+2022/09/30 11:06:49 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:49 ok
+2022/09/30 11:06:51 Got heartbeat
+2022/09/30 11:06:51 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:51 ok
+2022/09/30 11:06:53 Got heartbeat
+2022/09/30 11:06:53 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:53 ok
+2022/09/30 11:06:55 Got heartbeat
+2022/09/30 11:06:55 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:55 ok
+2022/09/30 11:06:57 Got heartbeat
+2022/09/30 11:06:57 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:57 ok
+2022/09/30 11:06:59 Got heartbeat
+2022/09/30 11:06:59 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:06:59 ok
+2022/09/30 11:07:01 Got heartbeat
+2022/09/30 11:07:01 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:01 ok
+2022/09/30 11:07:03 Got heartbeat
+2022/09/30 11:07:03 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:03 ok
+2022/09/30 11:07:05 Got heartbeat
+2022/09/30 11:07:05 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:05 ok
+2022/09/30 11:07:07 Got heartbeat
+2022/09/30 11:07:07 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:07 ok
+2022/09/30 11:07:09 Got heartbeat
+2022/09/30 11:07:09 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:09 ok
+2022/09/30 11:07:11 Got heartbeat
+2022/09/30 11:07:11 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:11 ok
+2022/09/30 11:07:13 Got heartbeat
+2022/09/30 11:07:13 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:13 ok
+2022/09/30 11:07:15 Got heartbeat
+2022/09/30 11:07:15 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:15 ok
+2022/09/30 11:07:17 Got heartbeat
+2022/09/30 11:07:17 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:17 ok
+2022/09/30 11:07:19 Got heartbeat
+2022/09/30 11:07:19 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:19 ok
+2022/09/30 11:07:22 Got heartbeat
+2022/09/30 11:07:22 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:22 ok
+2022/09/30 11:07:24 Got heartbeat
+2022/09/30 11:07:24 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:24 ok
+2022/09/30 11:07:26 Got heartbeat
+2022/09/30 11:07:26 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:26 ok
+2022/09/30 11:07:28 Got heartbeat
+2022/09/30 11:07:28 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:28 ok
+2022/09/30 11:07:30 Got heartbeat
+2022/09/30 11:07:30 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:30 ok
+2022/09/30 11:07:32 Got heartbeat
+2022/09/30 11:07:32 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:32 ok
+2022/09/30 11:07:34 Got heartbeat
+2022/09/30 11:07:34 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:34 ok
+2022/09/30 11:07:36 Got heartbeat
+2022/09/30 11:07:36 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:36 ok
+2022/09/30 11:07:38 Got heartbeat
+2022/09/30 11:07:38 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:38 ok
+2022/09/30 11:07:40 Got heartbeat
+2022/09/30 11:07:40 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:40 ok
+2022/09/30 11:07:42 Got heartbeat
+2022/09/30 11:07:42 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:42 ok
+2022/09/30 11:07:44 Got heartbeat
+2022/09/30 11:07:44 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:44 ok
+2022/09/30 11:07:46 Got heartbeat
+2022/09/30 11:07:46 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:46 ok
+2022/09/30 11:07:48 Got heartbeat
+2022/09/30 11:07:48 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:48 ok
+2022/09/30 11:07:50 Got heartbeat
+2022/09/30 11:07:50 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:50 ok
+2022/09/30 11:07:52 Got heartbeat
+2022/09/30 11:07:52 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:52 ok
+2022/09/30 11:07:54 Got heartbeat
+2022/09/30 11:07:54 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:54 ok
+2022/09/30 11:07:56 Got heartbeat
+2022/09/30 11:07:56 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:56 ok
+2022/09/30 11:07:58 Got heartbeat
+2022/09/30 11:07:58 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:07:58 ok
+2022/09/30 11:08:00 Got heartbeat
+2022/09/30 11:08:00 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:00 ok
+2022/09/30 11:08:02 Got heartbeat
+2022/09/30 11:08:02 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:02 ok
+2022/09/30 11:08:04 Got heartbeat
+2022/09/30 11:08:04 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:04 ok
+2022/09/30 11:08:06 Got heartbeat
+2022/09/30 11:08:06 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:06 ok
+2022/09/30 11:08:08 Got heartbeat
+2022/09/30 11:08:08 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:08 ok
+2022/09/30 11:08:10 Got heartbeat
+2022/09/30 11:08:10 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:10 ok
+2022/09/30 11:08:12 Got heartbeat
+2022/09/30 11:08:12 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:12 ok
+2022/09/30 11:08:14 Got heartbeat
+2022/09/30 11:08:14 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:14 ok
+2022/09/30 11:08:16 Got heartbeat
+2022/09/30 11:08:16 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:16 ok
+2022/09/30 11:08:18 Got heartbeat
+2022/09/30 11:08:18 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:18 ok
+2022/09/30 11:08:20 Got heartbeat
+2022/09/30 11:08:20 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:20 ok
+2022/09/30 11:08:22 Got heartbeat
+2022/09/30 11:08:22 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:22 ok
+2022/09/30 11:08:24 Got heartbeat
+2022/09/30 11:08:24 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:24 ok
+2022/09/30 11:08:26 Got heartbeat
+2022/09/30 11:08:26 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:08:26 ok
+2022/09/30 11:10:39 Listening on  localhost:8000
+2022/09/30 11:10:39 Initialing http routes..
+2022/09/30 11:10:39 Registering service discovery handlers
+2022/09/30 11:10:39 Handlers registered
+2022/09/30 11:10:42 Got heartbeat
+2022/09/30 11:10:42 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:10:42 ok
+2022/09/30 11:10:47 Got heartbeat
+2022/09/30 11:10:47 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:10:47 ok
+2022/09/30 11:10:52 Got heartbeat
+2022/09/30 11:10:52 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:10:52 ok
+2022/09/30 11:10:57 Got heartbeat
+2022/09/30 11:10:57 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:10:57 ok
+2022/09/30 11:11:02 Got heartbeat
+2022/09/30 11:11:02 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:02 ok
+2022/09/30 11:11:07 Got heartbeat
+2022/09/30 11:11:07 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:07 ok
+2022/09/30 11:11:12 Got heartbeat
+2022/09/30 11:11:12 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:12 ok
+2022/09/30 11:11:17 Got heartbeat
+2022/09/30 11:11:17 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:17 ok
+2022/09/30 11:11:22 Got heartbeat
+2022/09/30 11:11:22 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:22 ok
+2022/09/30 11:11:27 Got heartbeat
+2022/09/30 11:11:27 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:27 ok
+2022/09/30 11:11:32 Got heartbeat
+2022/09/30 11:11:32 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:32 ok
+2022/09/30 11:11:37 Got heartbeat
+2022/09/30 11:11:37 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:37 ok
+2022/09/30 11:11:42 Got heartbeat
+2022/09/30 11:11:42 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:42 ok
+2022/09/30 11:11:47 Got heartbeat
+2022/09/30 11:11:47 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:47 ok
+2022/09/30 11:11:52 Got heartbeat
+2022/09/30 11:11:52 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:52 ok
+2022/09/30 11:11:57 Got heartbeat
+2022/09/30 11:11:57 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:11:57 ok
+2022/09/30 11:12:02 Got heartbeat
+2022/09/30 11:12:02 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:12:02 ok
+2022/09/30 11:12:07 Got heartbeat
+2022/09/30 11:12:07 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:12:07 ok
+2022/09/30 11:12:12 Got heartbeat
+2022/09/30 11:12:12 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:12:12 ok
+2022/09/30 11:12:17 Got heartbeat
+2022/09/30 11:12:17 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:12:17 ok
+2022/09/30 11:12:22 Got heartbeat
+2022/09/30 11:12:22 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:12:22 ok
+2022/09/30 11:12:27 Got heartbeat
+2022/09/30 11:12:27 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:12:27 ok
+2022/09/30 11:12:32 Got heartbeat
+2022/09/30 11:12:32 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:12:32 ok
+2022/09/30 11:12:37 Got heartbeat
+2022/09/30 11:12:37 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:12:37 ok
+2022/09/30 11:12:42 Got heartbeat
+2022/09/30 11:12:42 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:12:42 ok
+2022/09/30 11:12:47 Got heartbeat
+2022/09/30 11:12:47 Service details [svc timetable host 127.0.0.1 port 8080] 
+2022/09/30 11:12:47 ok

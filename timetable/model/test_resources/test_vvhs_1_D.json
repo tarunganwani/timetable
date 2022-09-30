@@ -1,0 +1,56 @@
+{
+	"school":"vvhs",
+	"grade":"1",
+	"division":"D",
+	"days":[
+		{
+			"name"	 : "Monday",
+			"uniform": "REGULAR",
+			"periods":[
+				{
+					"type" : "1H",
+					"subject" : "Math",
+					"book" : "Book1"
+				},
+				{
+					"type" : "1H",
+					"subject" : "English",
+					"book" : "Book2"
+				},
+				{
+					"type" : "SHORT_BREAK",
+					"name" : "Recess1"
+				},
+				{
+					"type" : "1H",
+					"subject" : "Computers",
+					"book" : "Book3"
+				}
+			]
+		},
+		{
+			"name" : "Tuesday",
+			"uniform":"PE",
+			"periods":[
+				{
+					"type" : "1H",
+					"subject" : "Math",
+					"book" : "Book1"
+				},
+				{
+					"type" : "1H",
+					"subject" : "PE"
+				},
+				{
+					"type" : "SHORT_BREAK",
+					"name" : "Recess1"
+				},
+				{
+					"type" : "1H",
+					"subject" : "Computers",
+					"book" : "Book3"
+				}
+			]
+		}
+	]
+}

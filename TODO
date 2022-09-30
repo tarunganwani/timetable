@@ -1,0 +1,20 @@
+## Services ##
+
+1. Time table service
+2. Service discovery
+3. API gateway(client facing)
+
+## Server ##
+
+0. DNS mapping to abstract out the IP address for inter servce communication
+1. Create database for maintaining service registry
+2. Http test classes
+3. SSL certificates
+4. DATA DIR to be fetched from config instead of ini
+5. School code in caps (all caps/smalls for json file names)
+
+
+** Envs so far **
+
+DATA_DIR
+LOG_DIR
