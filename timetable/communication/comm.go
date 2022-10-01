@@ -14,7 +14,7 @@ const (
 	service_discovery_url         = "http://localhost:8000"
 	sd_heartbeat_endpoint         = "heartbeat"
 	sd_deregister_endpoint        = "deregister"
-	sd_keep_alive_interval_in_sec = 5
+	sd_keep_alive_interval_in_sec = 60
 	self_service_name             = "timetable"
 )
 

@@ -55,7 +55,7 @@ insert into books values (2, 'Book 2');
 				},
 				{
 					"type" : "SHORT_BREAK",
-					"name" : "Recess1"
+					"name" : "Recess1",
 				},
 				{
 					"type" : "1H",

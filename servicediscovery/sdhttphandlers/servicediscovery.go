@@ -119,7 +119,12 @@ func FetchServiceAddressHandler(w http.ResponseWriter, r *http.Request) {
 
 	log.Println("Handle fetch-service request")
 	reqvars := mux.Vars(r)
-	svcdata, err := sdbusiness.FetchServiceAddress(reqvars["servicename"])
+	svcModelData, err := sdbusiness.FetchServiceAddress(reqvars["servicename"])
+	svcdata := ServiceData{
+		Svcname: svcModelData.Name,
+		Host:    svcModelData.Address,
+		Port:    svcModelData.Port,
+	}
 	msg := ""
 	if err != nil {
 		msg = "Service not found"
@@ -136,6 +141,6 @@ func FetchServiceAddressHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	log.Println(svcdataBytes)
+	log.Println(string(svcdataBytes))
 	Bake200Response(w, []byte(svcdataBytes))
 }
