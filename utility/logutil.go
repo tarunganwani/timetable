@@ -6,13 +6,13 @@ import (
 	"os"
 )
 
-func InitializeLogger() error {
+func InitializeLogger(logname string) error {
 
 	logdir := os.Getenv("LOG_DIR")
 	if logdir == "" {
 		logdir = "."
 	}
-	filename := logdir + string(os.PathSeparator) + "timetable_srv.log"
+	filename := logdir + string(os.PathSeparator) + logname
 	logFile, err := os.OpenFile(filename, os.O_CREATE|os.O_APPEND|os.O_RDWR, 0666)
 	if err != nil {
 		return err

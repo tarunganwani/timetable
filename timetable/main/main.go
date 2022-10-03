@@ -15,7 +15,7 @@ const (
 
 func main() {
 
-	utility.InitializeLogger()
+	utility.InitializeLogger("timetable_srv.log")
 
 	//Do nothing with the errors, since these are already logged
 	err := communication.RegisterAndKeepAliveWithServiceDiscovery(timetable_svc_host, timetable_svc_port)
