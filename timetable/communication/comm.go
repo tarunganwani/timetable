@@ -7,7 +7,8 @@ import (
 	"log"
 	"net/http"
 	"time"
-	"timetable/util"
+
+	"github.com/tarunganwani/timetable/utility"
 )
 
 const (
@@ -53,7 +54,7 @@ func RegisterAndKeepAliveWithServiceDiscovery(svc_host, svc_port string) error {
 		request_headers["Content-Type"] = "application/json"
 		for {
 			log.Println("Ping(heart-beat) service discovery @ ", sd_heartbeat_url)
-			status, _, err := util.HttpPost(sd_heartbeat_url, heartbeat_req_payload, request_headers)
+			status, _, err := utility.HttpPost(sd_heartbeat_url, heartbeat_req_payload, request_headers)
 			if err != nil {
 				log.Println("Error POST-ing register request to service discovery", err.Error())
 			}

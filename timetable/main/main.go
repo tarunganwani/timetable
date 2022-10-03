@@ -4,7 +4,8 @@ import (
 	"log"
 	"timetable/communication"
 	"timetable/httphandlers"
-	"timetable/util"
+
+	"github.com/tarunganwani/timetable/utility"
 )
 
 const (
@@ -14,7 +15,7 @@ const (
 
 func main() {
 
-	util.InitializeLogger()
+	utility.InitializeLogger()
 
 	//Do nothing with the errors, since these are already logged
 	err := communication.RegisterAndKeepAliveWithServiceDiscovery(timetable_svc_host, timetable_svc_port)
@@ -30,7 +31,7 @@ func main() {
 		log.Fatalln("error initializing http router")
 	}
 
-	err = util.FireHttpServer(timetable_svc_host, timetable_svc_port, router)
+	err = utility.FireHttpServer(timetable_svc_host, timetable_svc_port, router)
 	if err != nil {
 		log.Fatalf("Server Shutdown Failed:%+v", err)
 	}

@@ -4,7 +4,8 @@ import (
 	"encoding/json"
 	"reflect"
 	"testing"
-	"timetable/util"
+
+	"github.com/tarunganwani/timetable/utility"
 )
 
 // func test_string_equals(t *testing.T, field, expected, actual string) {
@@ -15,7 +16,7 @@ import (
 
 func TestTimetableUnmarshal(t *testing.T) {
 
-	jsonData, err := util.ReadEntireFile("./test_resources/test_vvhs_1_D.json")
+	jsonData, err := utility.ReadEntireFile("./test_resources/test_vvhs_1_D.json")
 	if err != nil {
 		t.Fatalf("Error reading file " + err.Error())
 	}

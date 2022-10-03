@@ -6,10 +6,6 @@ import (
 	"os"
 )
 
-func fn1() {
-
-}
-
 func InitializeLogger() error {
 
 	logdir := os.Getenv("LOG_DIR")

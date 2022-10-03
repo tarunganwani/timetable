@@ -15,10 +15,6 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func fn2() {
-
-}
-
 func FireHttpServer(host, port string, router *mux.Router) error {
 
 	addr := host + ":" + port
