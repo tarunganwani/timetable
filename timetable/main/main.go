@@ -35,6 +35,12 @@ func main() {
 	if err != nil {
 		log.Fatalf("Server Shutdown Failed:%+v", err)
 	}
+
+	err = communication.DeregisterFromServiceDiscovery(timetable_svc_host, timetable_svc_port)
+	if err != nil {
+		log.Fatalln("Error initializing communnication with service discovery")
+	}
+
 	log.Print("Server Exited Properly")
 
 }

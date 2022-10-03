@@ -58,12 +58,37 @@ func RegisterAndKeepAliveWithServiceDiscovery(svc_host, svc_port string) error {
 			if err != nil {
 				log.Println("Error POST-ing register request to service discovery", err.Error())
 			}
-			if status != http.StatusOK {
+			if err == nil && status != http.StatusOK {
 				log.Println("Error POST-ing register request to service discovery. Response status received: ", status)
 			}
 			time.Sleep(sd_keep_alive_interval_in_sec * time.Second)
 		}
 	}(svc_host, svc_port, heartbeat_req_payload)
 
+	return nil
+}
+
+func DeregisterFromServiceDiscovery(svc_host, svc_port string) error {
+
+	deregister_req_payload, err := BakeServiceDiscoveryRequest(svc_host, svc_port)
+	if err != nil {
+		errmsg := fmt.Sprintf("Error creating deregister request for service discovery %s", err.Error())
+		log.Println(errmsg)
+		return errors.New(errmsg)
+	}
+
+	sd_deregister_url := service_discovery_url + "/" + sd_deregister_endpoint
+	request_headers := make(map[string]string)
+	request_headers["Content-Type"] = "application/json"
+	log.Println("Deregister from service discovery @ ", sd_deregister_url)
+	status, _, err := utility.HttpPost(sd_deregister_url, deregister_req_payload, request_headers)
+	if err != nil {
+		log.Println("error POST-ing deregister request to service discovery", err.Error())
+		return fmt.Errorf("error POST-ing deregister request to service discovery %s", err.Error())
+	}
+	if err == nil && status != http.StatusOK {
+		log.Println("error POST-ing deregister request to service discovery. Response status received: ", status)
+		return fmt.Errorf("error POST-ing deregister request to service discovery. Response status received: %d", status)
+	}
 	return nil
 }
