@@ -1,4 +1,4 @@
-package reusables
+package libs
 
 import (
 	"io"
