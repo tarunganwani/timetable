@@ -10,11 +10,14 @@ import (
 	"net/url"
 
 	"github.com/gorilla/mux"
+	"github.com/tarunganwani/timetable/utility"
 )
 
 const (
 	timetableSvcname    = "timetable"
 	serviceDiscoveryUrl = "http://localhost:8000/fetchaddress/"
+	gateway_svc_host    = "127.0.0.1"
+	gateway_svc_port    = "7000"
 )
 
 type ServiceData struct {
@@ -65,32 +68,40 @@ func fetchTimetableServiceAddress() (host string, port string, err error) {
 	return
 }
 
-func main() {
-	host, port, err := fetchTimetableServiceAddress()
-	if err != nil {
-		log.Println(err)
-	}
-	// log.Println("host = ", host)
-	// log.Println("port = ", port)
-	timetableTargetUrl := "http://" + host + ":" + port
-	remoteUrl, err := url.Parse(timetableTargetUrl)
-	if err != nil {
-		log.Println("Error parsing timetable target url ", err.Error())
-	}
-	ttProxy := httputil.NewSingleHostReverseProxy(remoteUrl)
-	r := mux.NewRouter()
-	r.HandleFunc("/{endpoint:.*}", handler(ttProxy)).Methods("GET")
-	// http.Handle("/", r)
-	log.Println("Listening on port 7000...")
-	http.Handle("/", r)
-	http.ListenAndServe(":7000", r)
-}
-
-func handler(p *httputil.ReverseProxy) func(http.ResponseWriter, *http.Request) {
+func proxyhandler(p *httputil.ReverseProxy) func(http.ResponseWriter, *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
 		r.URL.Path = mux.Vars(r)["endpoint"]
 		log.Println("Forwarding request to timetable service - endpoint ", r.URL.Path)
 		p.ServeHTTP(w, r)
 		log.Println("request served")
 	}
+}
+
+func main() {
+
+	//Initialize logger
+	utility.InitializeLogger("gateway_service.log")
+
+	host, port, err := fetchTimetableServiceAddress()
+	if err != nil {
+		log.Println(err)
+	}
+
+	timetableTargetUrl := "http://" + host + ":" + port
+	remoteUrl, err := url.Parse(timetableTargetUrl)
+	if err != nil {
+		log.Println("Error parsing timetable target url ", err.Error())
+	}
+	ttProxy := httputil.NewSingleHostReverseProxy(remoteUrl)
+
+	router := mux.NewRouter()
+	router.HandleFunc("/{endpoint:.*}", proxyhandler(ttProxy)).Methods("GET")
+	log.Printf("Listening on port %s ...\n", gateway_svc_host+":"+gateway_svc_port)
+	http.Handle("/", router)
+
+	err = utility.FireHttpServer(gateway_svc_host, gateway_svc_port, router)
+	if err != nil {
+		log.Fatalf("server Shutdown Failed:%+v", err)
+	}
+	log.Print("Server Exited Properly")
 }
