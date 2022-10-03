@@ -1,11 +1,11 @@
-package util
+package reusables
 
 import (
 	"io"
 	"os"
 )
 
-func ABC() {
+func XYZ() {
 
 }
 func ReadEntireFile(filepath string) ([]byte, error) {
