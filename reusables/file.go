@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func XYZ() {
+func ABC() {
 
 }
 func ReadEntireFile(filepath string) ([]byte, error) {
