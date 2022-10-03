@@ -22,14 +22,18 @@ func main() {
 		log.Fatalln("Error initializing communnication with service discovery")
 	}
 
-	r := httphandlers.RouterConfig{
+	router, err := httphandlers.InitializeRouter(httphandlers.RouterConfig{
 		Host: timetable_svc_host,
 		Port: timetable_svc_port,
+	})
+	if err != nil {
+		log.Fatalln("error initializing http router")
 	}
 
-	log.Println("Listening on ", (r.Host + ":" + r.Port))
-	err = httphandlers.InitializeRouter(r)
+	err = util.FireHttpServer(timetable_svc_host, timetable_svc_port, router)
 	if err != nil {
-		log.Fatalln(err)
+		log.Fatalf("Server Shutdown Failed:%+v", err)
 	}
+	log.Print("Server Exited Properly")
+
 }
