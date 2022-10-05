@@ -3,6 +3,8 @@ package utility
 import (
 	"bytes"
 	"context"
+	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"log"
@@ -22,6 +24,13 @@ func FireHttpServer(host, port string, router *mux.Router) error {
 		Addr:    addr,
 		Handler: router,
 	}
+
+	defer func() {
+		err := recover()
+		if err != nil {
+			log.Println("error while firing http server", err)
+		}
+	}()
 
 	log.Println("listening on ", (host + ":" + port))
 
@@ -69,4 +78,77 @@ func HttpPost(url string, payload []byte, headers map[string]string) (int, []byt
 	log.Println(string(respbytes))
 	return resp.StatusCode, respbytes, err
 
+}
+
+func BakeHeader(w http.ResponseWriter, status int) {
+	w.WriteHeader(http.StatusNotFound)
+}
+
+func BakeJsonContentTypeInHeader(w http.ResponseWriter) {
+	w.Header().Set("Content-Type", "application/json")
+}
+
+func GetMessageMap(msg string) (m map[string]string) {
+	m = make(map[string]string)
+	m["message"] = msg
+	return
+}
+
+func EncodeToJSON(v any) (jsonResp []byte, err error) {
+
+	jsonResp, err = json.Marshal(v)
+	if err != nil {
+		errmsg := fmt.Sprintf("Error in JSON encoding. Err: %s", err.Error())
+		err = errors.New(errmsg)
+		return
+	}
+	return
+}
+
+func Bake404Response(w http.ResponseWriter, msg string) (err error) {
+
+	BakeHeader(w, http.StatusNotFound)
+	BakeJsonContentTypeInHeader(w)
+	jsonResp, err := EncodeToJSON(GetMessageMap(msg))
+	if err != nil {
+		return
+	}
+	_, err = w.Write(jsonResp)
+	return
+}
+
+func Bake500Response(w http.ResponseWriter, msg string) (err error) {
+
+	BakeHeader(w, http.StatusInternalServerError)
+	BakeJsonContentTypeInHeader(w)
+	jsonResp, err := EncodeToJSON(GetMessageMap(msg))
+	if err != nil {
+		return
+	}
+	_, err = w.Write(jsonResp)
+	return
+}
+
+func Bake501Response(w http.ResponseWriter, msg string) (err error) {
+
+	BakeHeader(w, http.StatusNotImplemented)
+	BakeJsonContentTypeInHeader(w)
+	jsonResp, err := EncodeToJSON(GetMessageMap(msg))
+	if err != nil {
+		return
+	}
+	_, err = w.Write(jsonResp)
+	return
+}
+
+func Bake200Response(w http.ResponseWriter, ttJsonData []byte) (err error) {
+
+	BakeHeader(w, http.StatusOK)
+	BakeJsonContentTypeInHeader(w)
+	jsonResp, err := EncodeToJSON(GetMessageMap(string(ttJsonData)))
+	if err != nil {
+		return
+	}
+	_, err = w.Write(jsonResp)
+	return
 }

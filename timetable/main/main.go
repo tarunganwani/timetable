@@ -13,6 +13,15 @@ const (
 	timetable_svc_port = "8080"
 )
 
+//TODO MAJOR - recover from panic in important functions(main, handlers, etc) for graceful exits
+//TODO MAJOR - write tests for http handlers, models and other packages for all modules
+//TODO MAJOR - dockerize all apps(gateway, service discovery and timetable service)
+//TODO MAJOR - container respawn logic with K8S or other relevant tech
+//TODO MAJOR - automate build with makefile or a single go command
+//TODO MAJOR - set a CI/CD pipeline
+//TODO MAJOR - refactor gateway service as a whole - divide into packages
+//TODO MAJOR - implementation to prevent ddos attack in gateway
+
 func main() {
 
 	utility.InitializeLogger("timetable_srv.log")
