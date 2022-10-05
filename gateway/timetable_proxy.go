@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"gateway/util"
 	"io"
 	"log"
 	"net/http"
@@ -70,6 +71,16 @@ func fetchTimetableServiceAddress() (host string, port string, err error) {
 
 func proxyhandler(p *httputil.ReverseProxy) func(http.ResponseWriter, *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
+
+		defer func() {
+			err := recover()
+			if err != nil {
+				log.Println("error encountered in proxy handler", err)
+				// w.WriteHeader(http.StatusInternalServerError)
+				util.Bake500Response(w, "internal error")
+			}
+		}()
+
 		r.URL.Path = mux.Vars(r)["endpoint"]
 		log.Println("Forwarding request to timetable service - endpoint ", r.URL.Path)
 		p.ServeHTTP(w, r)
@@ -78,6 +89,13 @@ func proxyhandler(p *httputil.ReverseProxy) func(http.ResponseWriter, *http.Requ
 }
 
 func main() {
+
+	defer func() {
+		err := recover()
+		if err != nil {
+			log.Println("error encountered in timetable service", err)
+		}
+	}()
 
 	//Initialize logger
 	utility.InitializeLogger("gateway_service.log")
