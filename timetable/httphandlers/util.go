@@ -8,7 +8,7 @@ import (
 )
 
 func BakeHeader(w http.ResponseWriter, status int) {
-	w.WriteHeader(http.StatusNotFound)
+	w.WriteHeader(status)
 }
 
 func BakeJsonContentTypeInHeader(w http.ResponseWriter) {

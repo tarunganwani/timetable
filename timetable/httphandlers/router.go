@@ -16,6 +16,6 @@ func InitializeRouter(cfg RouterConfig) (*mux.Router, error) {
 
 	log.Println("Initialing http routes..")
 	router := mux.NewRouter()
-	err := register_timetable_handlers(router)
+	err := RegisterTimetableHandlers(router)
 	return router, err
 }

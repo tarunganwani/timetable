@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func register_timetable_handlers(router *mux.Router) error {
+func RegisterTimetableHandlers(router *mux.Router) error {
 	if router == nil {
 		msg := "failed to register timetable handlers, router not instantiated"
 		log.Println(msg)

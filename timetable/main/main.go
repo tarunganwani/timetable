@@ -13,16 +13,22 @@ const (
 	timetable_svc_port = "8080"
 )
 
-//TODO MAJOR - recover from panic in important functions(main, handlers, etc) for graceful exits
-//TODO MAJOR - error handling and retries when one of the communicating service goes down
 //TODO IMPROVEMENT - use messaging queues instead of http communication within among the internal services
 //TODO MAJOR - write tests for http handlers, models and other packages for all modules
+//TODO MAJOR - write benchmarks
+//TODO MAJOR - write concurrent tests
+//TODO MAJOR - implement health check between gateway and service discovery
+//TODO MAJOR - run go tools to static analyze race conditions
+//TODO MAJOR - fix race condition in model map ion timetable
 //TODO MAJOR - dockerize all apps(gateway, service discovery and timetable service)
 //TODO MAJOR - container respawn logic with K8S or other relevant tech
 //TODO MAJOR - automate build with makefile or a single go command
 //TODO MAJOR - set a CI/CD pipeline
+//TODO MAJOR - automate deployment
 //TODO MAJOR - refactor gateway service as a whole - divide into packages
 //TODO MAJOR - implementation to prevent ddos attack in gateway
+//DONE -- TODO MAJOR - recover from panic in important functions(main, handlers, etc) for graceful exits
+//DONE -- TODO MAJOR - error handling and retries when one of the communicating service goes down
 
 func main() {
 
@@ -55,7 +61,7 @@ func main() {
 
 	err = communication.DeregisterFromServiceDiscovery(timetable_svc_host, timetable_svc_port)
 	if err != nil {
-		log.Fatalln("Error initializing communnication with service discovery")
+		log.Fatalln(err)
 	}
 
 	log.Print("Server Exited Properly")

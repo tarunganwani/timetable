@@ -81,7 +81,7 @@ func HttpPost(url string, payload []byte, headers map[string]string) (int, []byt
 }
 
 func BakeHeader(w http.ResponseWriter, status int) {
-	w.WriteHeader(http.StatusNotFound)
+	w.WriteHeader(status)
 }
 
 func BakeJsonContentTypeInHeader(w http.ResponseWriter) {

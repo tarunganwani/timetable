@@ -80,11 +80,9 @@ func DeregisterFromServiceDiscovery(svc_host, svc_port string) error {
 	log.Println("Deregister from service discovery @ ", sd_deregister_url)
 	status, _, err := utility.HttpPost(sd_deregister_url, deregister_req_payload, request_headers)
 	if err != nil {
-		log.Println("error POST-ing deregister request to service discovery", err.Error())
 		return fmt.Errorf("error POST-ing deregister request to service discovery %s", err.Error())
 	}
 	if err == nil && status != http.StatusOK {
-		log.Println("error POST-ing deregister request to service discovery. Response status received: ", status)
 		return fmt.Errorf("error POST-ing deregister request to service discovery. Response status received: %d", status)
 	}
 	return nil
