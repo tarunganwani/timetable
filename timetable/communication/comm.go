@@ -37,9 +37,6 @@ func BakeServiceDiscoveryRequest(svc_host, svc_port string) ([]byte, error) {
 
 func RegisterAndKeepAliveWithServiceDiscovery(svc_host, svc_port string) error {
 
-	// TODO implement exit criteria for the below go routine and the microservice as a whole
-	// TODO Deregister from service discovery at service exit
-
 	heartbeat_req_payload, err := BakeServiceDiscoveryRequest(svc_host, svc_port)
 	if err != nil {
 		errmsg := fmt.Sprintf("Error creating register request for service discovery %s", err.Error())

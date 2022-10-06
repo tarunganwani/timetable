@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"net/http/httputil"
 	"net/url"
+	"time"
 
 	"github.com/gorilla/mux"
 	"github.com/tarunganwani/timetable/utility"
@@ -40,12 +41,9 @@ func fetchTimetableServiceAddress() (host string, port string, err error) {
 	resp, err := http.Get(serviceDiscoveryUrl + timetableSvcname)
 	if err != nil {
 		err = fmt.Errorf("error fetching address from service discovery [%s]", err.Error())
-		log.Println(err.Error())
 		return
-	}
-	if resp.StatusCode != http.StatusOK {
+	} else if resp.StatusCode != http.StatusOK {
 		err = fmt.Errorf("error fetching address from service discovery [Response code recd %d]", resp.StatusCode)
-		log.Println(err.Error())
 		return
 	}
 	respPayload, _ := io.ReadAll(resp.Body)
@@ -76,7 +74,6 @@ func proxyhandler(p *httputil.ReverseProxy) func(http.ResponseWriter, *http.Requ
 			err := recover()
 			if err != nil {
 				log.Println("error encountered in proxy handler", err)
-				// w.WriteHeader(http.StatusInternalServerError)
 				util.Bake500Response(w, "internal error")
 			}
 		}()
@@ -88,6 +85,11 @@ func proxyhandler(p *httputil.ReverseProxy) func(http.ResponseWriter, *http.Requ
 	}
 }
 
+const (
+	retry_count = 100
+)
+
+// put retry count while fetching timetable service addr
 func main() {
 
 	defer func() {
@@ -100,9 +102,32 @@ func main() {
 	//Initialize logger
 	utility.InitializeLogger("gateway_service.log")
 
-	host, port, err := fetchTimetableServiceAddress()
-	if err != nil {
+	host := ""
+	port := ""
+	var err error
+	var i int
+	var retryIntervalInSec int = 0
+	var maxIntervalInSec int = 60
+
+	for i = 0; i < retry_count; i++ {
+		log.Println("Connect to service discovery attempt", i)
+		host, port, err = fetchTimetableServiceAddress()
+		if err == nil {
+			break
+		}
 		log.Println(err)
+		//Back off strategy
+		if retryIntervalInSec >= maxIntervalInSec {
+			retryIntervalInSec = maxIntervalInSec
+		} else {
+			retryIntervalInSec++
+		}
+		time.Sleep(time.Duration(retryIntervalInSec) * time.Second)
+	}
+	if i == retry_count {
+		log.Fatalln("Max retry count reached")
+	} else {
+		log.Println("successfully fetched timetable service address")
 	}
 
 	timetableTargetUrl := "http://" + host + ":" + port

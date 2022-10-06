@@ -15,6 +15,12 @@ const (
 
 func main() {
 
+	defer func() {
+		err := recover()
+		if err != nil {
+			log.Println("error encountered in discovery service", err)
+		}
+	}()
 	//Initialize logger
 	utility.InitializeLogger("service_discovery.log")
 

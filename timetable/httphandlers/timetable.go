@@ -25,7 +25,7 @@ func FetchTimetable(w http.ResponseWriter, r *http.Request) {
 	defer func() {
 		if err := recover(); err != nil {
 			msg := "error serving request"
-			log.Println(msg)
+			log.Println(msg, err)
 			Bake500Response(w, msg)
 		}
 	}()
@@ -52,7 +52,7 @@ func FetchTimetable(w http.ResponseWriter, r *http.Request) {
 	}
 	if err != nil {
 		msg := "error serving request"
-		log.Println(msg)
+		log.Println(msg, err.Error())
 		Bake500Response(w, msg)
 		return
 	}

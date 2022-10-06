@@ -14,6 +14,8 @@ const (
 )
 
 //TODO MAJOR - recover from panic in important functions(main, handlers, etc) for graceful exits
+//TODO MAJOR - error handling and retries when one of the communicating service goes down
+//TODO IMPROVEMENT - use messaging queues instead of http communication within among the internal services
 //TODO MAJOR - write tests for http handlers, models and other packages for all modules
 //TODO MAJOR - dockerize all apps(gateway, service discovery and timetable service)
 //TODO MAJOR - container respawn logic with K8S or other relevant tech
@@ -26,6 +28,12 @@ func main() {
 
 	utility.InitializeLogger("timetable_srv.log")
 
+	defer func() {
+		err := recover()
+		if err != nil {
+			log.Println("error encountered in timetable service", err)
+		}
+	}()
 	//Do nothing with the errors, since these are already logged
 	err := communication.RegisterAndKeepAliveWithServiceDiscovery(timetable_svc_host, timetable_svc_port)
 	if err != nil {

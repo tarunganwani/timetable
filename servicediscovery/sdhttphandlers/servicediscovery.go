@@ -26,7 +26,6 @@ func register_service_discovery_handlers(router *mux.Router) error {
 	}
 	router.HandleFunc("/heartbeat", HeartbeatServiceHandler).Methods("POST")
 	router.HandleFunc("/deregister", DeregisterServiceHandler).Methods("POST")
-	// router.HandleFunc("/keepalive", ServiceKeepaliveHandler).Methods("POST")
 	router.HandleFunc("/fetchaddress/{servicename}", FetchServiceAddressHandler).Methods("GET")
 	log.Println("Handlers registered")
 	return nil
@@ -41,6 +40,13 @@ func getRequestData(r *http.Request) (ServiceData, error) {
 
 func HeartbeatServiceHandler(w http.ResponseWriter, r *http.Request) {
 
+	defer func() {
+		err := recover()
+		if err != nil {
+			log.Println("error encountered in proxy handler", err)
+			Bake500Response(w, "internal error")
+		}
+	}()
 	log.Println("Got heartbeat")
 	data, err := getRequestData(r)
 	msg := ""
@@ -67,6 +73,13 @@ func HeartbeatServiceHandler(w http.ResponseWriter, r *http.Request) {
 
 func DeregisterServiceHandler(w http.ResponseWriter, r *http.Request) {
 
+	defer func() {
+		err := recover()
+		if err != nil {
+			log.Println("error encountered in proxy handler", err)
+			Bake500Response(w, "internal error")
+		}
+	}()
 	log.Println("Handle deregister request")
 	data, err := getRequestData(r)
 	msg := ""
@@ -90,33 +103,15 @@ func DeregisterServiceHandler(w http.ResponseWriter, r *http.Request) {
 	Bake200Response(w, []byte(msg))
 }
 
-func ServiceKeepaliveHandler(w http.ResponseWriter, r *http.Request) {
-
-	log.Println("Handle keepalive request")
-	data, err := getRequestData(r)
-	msg := ""
-	if err != nil {
-		msg = "Invalid input request"
-		log.Println(msg, err.Error())
-		Bake400Response(w, msg)
-		return
-	}
-
-	err = sdbusiness.ServiceKeepalive(data.Svcname, data.Host, data.Port)
-	if err != nil {
-		msg = "Internal error"
-		log.Println(msg, err.Error())
-		Bake500Response(w, msg)
-		return
-	}
-
-	msg = "ok"
-	log.Println(msg)
-	Bake200Response(w, []byte(msg))
-}
-
 func FetchServiceAddressHandler(w http.ResponseWriter, r *http.Request) {
 
+	defer func() {
+		err := recover()
+		if err != nil {
+			log.Println("error encountered in proxy handler", err)
+			Bake500Response(w, "internal error")
+		}
+	}()
 	log.Println("Handle fetch-service request")
 	reqvars := mux.Vars(r)
 	svcModelData, err := sdbusiness.FetchServiceAddress(reqvars["servicename"])
