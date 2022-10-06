@@ -14,12 +14,16 @@ const (
 )
 
 //TODO IMPROVEMENT - use messaging queues instead of http communication within among the internal services
-//TODO MAJOR - write tests for http handlers, models and other packages for all modules
-//TODO MAJOR - write benchmarks
+
 //TODO MAJOR - write concurrent tests
-//TODO MAJOR - implement health check between gateway and service discovery
 //TODO MAJOR - run go tools to static analyze race conditions
 //TODO MAJOR - fix race condition in model map ion timetable
+
+//TODO MAJOR - write tests for http handlers, models and other packages for all modules
+//TODO MAJOR - write benchmarks
+
+//TODO MAJOR - implement health check between gateway and service discovery
+
 //TODO MAJOR - dockerize all apps(gateway, service discovery and timetable service)
 //TODO MAJOR - container respawn logic with K8S or other relevant tech
 //TODO MAJOR - automate build with makefile or a single go command

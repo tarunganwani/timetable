@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"os"
+	"sync"
 	"testing"
 	"timetable/httphandlers"
 
@@ -26,6 +27,57 @@ type TestGetObject struct {
 	grade      string
 	division   string
 	outStatus  int
+}
+
+func TestTimetableRouteConcurrentRequests(t *testing.T) {
+
+	setup()
+
+	testGetObj := TestGetObject{
+		inputRoute: "/timetable",
+		schoolcode: "vvhs",
+		grade:      "1",
+		division:   "D",
+		outStatus:  http.StatusOK,
+	}
+	var wg sync.WaitGroup
+	numConRequests := 10000 //test 10K requests
+	wg.Add(numConRequests)
+	for i := 0; i < numConRequests; i++ {
+
+		go func(testGetObj TestGetObject, wg *sync.WaitGroup) {
+			absIpRoute := testGetObj.inputRoute + "/" + testGetObj.schoolcode +
+				"/" + testGetObj.grade + "/" + testGetObj.division
+			log.Println("Testing route ", absIpRoute)
+			request, err := http.NewRequest("GET", absIpRoute, nil)
+			if err != nil {
+				t.Error(err)
+			}
+
+			//Hack to try to fake gorilla/mux vars
+			vars := map[string]string{
+				"schoolcode": testGetObj.schoolcode,
+				"grade":      testGetObj.grade,
+				"division":   testGetObj.division,
+			}
+
+			// set mux url vars
+			request = mux.SetURLVars(request, vars)
+
+			//create response recorder
+			respRecorder := httptest.NewRecorder()
+			handler := http.HandlerFunc(httphandlers.FetchTimetable)
+			handler.ServeHTTP(respRecorder, request)
+
+			if status := respRecorder.Code; status != testGetObj.outStatus {
+				t.Errorf("handler returned wrong status code: got %v want %v",
+					status, testGetObj.outStatus)
+			}
+			wg.Done()
+		}(testGetObj, &wg)
+	} //end of for loop
+
+	wg.Wait()
 }
 
 func TestTimetableRouteHandler(t *testing.T) {
