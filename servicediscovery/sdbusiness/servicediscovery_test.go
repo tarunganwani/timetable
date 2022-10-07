@@ -1,9 +1,11 @@
 package sdbusiness_test
 
 import (
+	"math/rand"
 	"servicediscovery/sdbusiness"
 	"servicediscovery/sdmodel"
 	"strings"
+	"sync"
 	"testing"
 )
 
@@ -96,4 +98,62 @@ func TestNegativeFlows(t *testing.T) {
 	if !strings.Contains(err.Error(), "not registered") {
 		t.Fatal("Should get not registered error")
 	}
+}
+
+func TestConcurrency(t *testing.T) {
+
+	sdSet1 := sdmodel.ServiceData{Name: "timetable", Address: "localhost", Port: "8000"}
+	sdSet2 := sdmodel.ServiceData{Name: "timetable", Address: "localhost", Port: "8001"}
+	sdSet3 := sdmodel.ServiceData{Name: "uniform_catalog", Address: "localhost", Port: "9000"}
+	sdSet4 := sdmodel.ServiceData{Name: "uniform_catalog", Address: "localhost", Port: "9001"}
+
+	const (
+		REGISTER   = 0
+		DEREGISTER = 1
+		FETCH      = 2
+		NUMBER_OPS = 3
+	)
+	model := sdmodel.NewSDModel()
+	DoRandomOp := func(sdSet sdmodel.ServiceData, model *sdmodel.Model, t *testing.T) {
+
+		defer func() {
+			if err := recover(); err != nil {
+				t.Fatal("Program panicked", err)
+			}
+		}()
+		op := rand.Int() % NUMBER_OPS
+		switch op {
+		case REGISTER:
+			err := sdbusiness.RegisterService(sdSet.Name, sdSet.Address, sdSet.Port, model)
+			if err != nil {
+				t.Error("Register error:", err)
+			}
+		case DEREGISTER:
+			err := sdbusiness.DeregisterService(sdSet.Name, sdSet.Address, sdSet.Port, model)
+			if err != nil && strings.Contains(err.Error(), "not registered") == false {
+				t.Error("Deregister error:", err)
+			}
+		case FETCH:
+			_, err := sdbusiness.FetchServiceAddress(sdSet.Name, model)
+			if err != nil && strings.Contains(err.Error(), "not registered") == false {
+				t.Error("Fetch error:", err)
+			}
+
+		}
+	}
+
+	loopOverRandomOp := func(model *sdmodel.Model, t *testing.T, sdSet sdmodel.ServiceData, N int, wg *sync.WaitGroup) {
+		for i := 0; i < N; i++ {
+			DoRandomOp(sdSet, model, t)
+		}
+		wg.Done()
+	}
+
+	wg := new(sync.WaitGroup)
+	wg.Add(2)
+	go loopOverRandomOp(model, t, sdSet1, 100000, wg)
+	go loopOverRandomOp(model, t, sdSet2, 100000, wg)
+	go loopOverRandomOp(model, t, sdSet3, 100000, wg)
+	go loopOverRandomOp(model, t, sdSet4, 100000, wg)
+	wg.Wait()
 }
