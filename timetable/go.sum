@@ -1,2 +1,4 @@
 github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
 github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/tarunganwani/timetable/utility v0.0.0-20221007133541-93af55d6d296 h1:HXG7WQLziUbIMFnWOBifRMzY43hR6hkhDKVziwf/R88=
+github.com/tarunganwani/timetable/utility v0.0.0-20221007133541-93af55d6d296/go.mod h1:NZXFdbcXI/nG2DPbh/e1Tv6dwO0lhKWlVcsAnrP+h3o=

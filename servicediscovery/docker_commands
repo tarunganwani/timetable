@@ -1,0 +1,2 @@
+sudo docker build --tag docker-sd .
+sudo docker run --rm -p 8000:8000 --net=host docker-sd
