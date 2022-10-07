@@ -15,14 +15,19 @@ const (
 
 //TODO IMPROVEMENT - use messaging queues instead of http communication within among the internal services
 
+//TODO MAJOR - figure out a way to include third party module changes [go get, go mod clean, etc]
+
 //TODO MAJOR - write concurrent tests
 //TODO MAJOR - run go tools to static analyze race conditions
-//TODO MAJOR - fix race condition in model map ion timetable
+//TODO MAJOR - fix race condition in model map in service discovery
 
 //TODO MAJOR - write tests for http handlers, models and other packages for all modules
 //TODO MAJOR - write benchmarks
 
 //TODO MAJOR - implement health check between gateway and service discovery
+
+//TODO MAJOR - implementation to prevent ddos attack in gateway
+//TODO MAJOR - implement certificates on gateway (nternet traffic encryption)
 
 //TODO MAJOR - dockerize all apps(gateway, service discovery and timetable service)
 //TODO MAJOR - container respawn logic with K8S or other relevant tech
@@ -30,7 +35,7 @@ const (
 //TODO MAJOR - set a CI/CD pipeline
 //TODO MAJOR - automate deployment
 //TODO MAJOR - refactor gateway service as a whole - divide into packages
-//TODO MAJOR - implementation to prevent ddos attack in gateway
+
 //DONE -- TODO MAJOR - recover from panic in important functions(main, handlers, etc) for graceful exits
 //DONE -- TODO MAJOR - error handling and retries when one of the communicating service goes down
 

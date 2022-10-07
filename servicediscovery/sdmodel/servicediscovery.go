@@ -1,6 +1,9 @@
 package sdmodel
 
-import "time"
+import (
+	"log"
+	"time"
+)
 
 type ServiceData struct {
 	Name                  string
@@ -11,4 +14,19 @@ type ServiceData struct {
 
 type ServiceMapType map[string][]ServiceData
 
-var ServiceDiscoveryMap ServiceMapType
+type Model struct {
+	ServiceDiscoveryMap ServiceMapType
+	Initialized         bool
+}
+
+func (md *Model) initModel() {
+	md.ServiceDiscoveryMap = make(ServiceMapType)
+	md.Initialized = true
+}
+
+func NewSDModel() *Model {
+	log.Println("Initializing model..")
+	model := new(Model)
+	model.initModel()
+	return model
+}
