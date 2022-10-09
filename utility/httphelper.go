@@ -41,8 +41,10 @@ func FireHttpServer(host, port, cert, key string, router *mux.Router) error {
 	go func(cert, key string) {
 		var err error
 		if cert != "" && key != "" {
+			log.Println("http listen and serve ")
 			err = srv.ListenAndServe()
 		} else {
+			log.Println("https listen and serve ")
 			err = srv.ListenAndServeTLS(cert, key)
 		}
 		if err != nil && err != http.ErrServerClosed {
