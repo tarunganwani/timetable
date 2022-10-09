@@ -1,13 +1,15 @@
 
-//TODO MAJOR - implement certificates on gateway (internet traffic encryption)
-//TODO MAJOR - container respawn logic with K8S or other relevant tech
-//TODO MAJOR - implementation to prevent ddos attack in gateway
 //TODO MAJOR - implement health check between gateway and service discovery
-//TODO MAJOR - figure out a way to include third party module changes [go get, go mod clean, etc]
+//TODO MAJOR - container respawn logic with K8S or other relevant tech
+//TODO MAJOR - check need for dns to hide IP associated with service discovery, or other services
 
-//TODO MAJOR - automate build and run with makefile or a single go command
+//TODO MAJOR - implementation to prevent ddos attack in gateway
 //TODO MAJOR - host all services on different servers and check communication
 //TODO MAJOR - set an aggregate logger service
+//TODO MAJOR - check in actual timetable json inputs
+//TODO MAJOR - figure out a way to include third party module changes [go get, go clean -modcache, etc]
+
+//TODO MAJOR - automate build and run with makefile or a single go command
 //TODO MAJOR - set a CI/CD pipeline
 //TODO MAJOR - automate deployment, fixes/patches
 //TODO MAJOR - refactor gateway service as a whole - divide into packages
@@ -26,3 +28,4 @@
 //DONE -- TODO MAJOR - run go tools to static analyze race conditions
 //DONE -- TODO MAJOR - fix race condition in model map in service discovery
 //DONE -- TODO MAJOR - write tests for http handlers, models and other packages for all modules
+//DONE -- TODO MAJOR - implement certificates on gateway (internet traffic encryption)

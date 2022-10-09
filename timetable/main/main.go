@@ -37,7 +37,7 @@ func main() {
 		log.Fatalln("error initializing http router")
 	}
 
-	err = utility.FireHttpServer(timetable_svc_host, timetable_svc_port, router)
+	err = utility.FireHttpServer(timetable_svc_host, timetable_svc_port, "", "", router)
 	if err != nil {
 		log.Fatalf("Server Shutdown Failed:%+v", err)
 	}

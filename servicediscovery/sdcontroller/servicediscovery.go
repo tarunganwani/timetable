@@ -40,7 +40,7 @@ func (controller *Controller) initializeRouter(cfg RouterConfig) error {
 }
 
 func (controller *Controller) Serve() {
-	err := utility.FireHttpServer(controller.cfg.Host, controller.cfg.Port, controller.router)
+	err := utility.FireHttpServer(controller.cfg.Host, controller.cfg.Port, "", "", controller.router)
 	if err != nil {
 		log.Fatalf("server Shutdown Failed:%+v", err)
 	}
