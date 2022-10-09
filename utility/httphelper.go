@@ -17,7 +17,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func FireHttpServer(host, port string, router *mux.Router) error {
+func FireHttpServer(host, port, cert, key string, router *mux.Router) error {
 
 	addr := host + ":" + port
 	srv := &http.Server{
@@ -38,11 +38,17 @@ func FireHttpServer(host, port string, router *mux.Router) error {
 	done := make(chan os.Signal, 1)
 	signal.Notify(done, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)
 
-	go func() {
-		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+	go func(cert, key string) {
+		var err error
+		if cert != "" && key != "" {
+			err = srv.ListenAndServe()
+		} else {
+			err = srv.ListenAndServeTLS(cert, key)
+		}
+		if err != nil && err != http.ErrServerClosed {
 			log.Fatalf("listen: %s\n", err)
 		}
-	}()
+	}(cert, key)
 	log.Println("Server Started")
 
 	<-done
@@ -55,6 +61,8 @@ func FireHttpServer(host, port string, router *mux.Router) error {
 	}()
 	return srv.Shutdown(ctx)
 }
+
+//Utility functions
 
 func HttpPost(url string, payload []byte, headers map[string]string) (int, []byte, error) {
 
