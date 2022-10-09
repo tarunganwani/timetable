@@ -89,6 +89,10 @@ const (
 	retry_count = 100
 )
 
+func getCertAndKeyFilePaths() (string, string) {
+	return "./certs/cert.pem", "./certs/key.pem"
+}
+
 // put retry count while fetching timetable service addr
 func main() {
 
@@ -142,7 +146,9 @@ func main() {
 	log.Printf("Listening on port %s ...\n", gateway_svc_host+":"+gateway_svc_port)
 	http.Handle("/", router)
 
-	err = utility.FireHttpServer(gateway_svc_host, gateway_svc_port, router)
+	certFile, keyFile := getCertAndKeyFilePaths()
+
+	err = utility.FireHttpServer(gateway_svc_host, gateway_svc_port, certFile, keyFile, router)
 	if err != nil {
 		log.Fatalf("server Shutdown Failed:%+v", err)
 	}

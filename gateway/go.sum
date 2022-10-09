@@ -4,3 +4,7 @@ github.com/tarunganwani/timetable/utility v0.0.0-20221003145949-7d317a0dd029 h1:
 github.com/tarunganwani/timetable/utility v0.0.0-20221003145949-7d317a0dd029/go.mod h1:NZXFdbcXI/nG2DPbh/e1Tv6dwO0lhKWlVcsAnrP+h3o=
 github.com/tarunganwani/timetable/utility v0.0.0-20221007133541-93af55d6d296 h1:HXG7WQLziUbIMFnWOBifRMzY43hR6hkhDKVziwf/R88=
 github.com/tarunganwani/timetable/utility v0.0.0-20221007133541-93af55d6d296/go.mod h1:NZXFdbcXI/nG2DPbh/e1Tv6dwO0lhKWlVcsAnrP+h3o=
+github.com/tarunganwani/timetable/utility v0.0.0-20221009194523-672d34bbca8d h1:cg29EybQSdZUZ4X3IxZL1LO0ss/2MomFmzfJNv7KVXk=
+github.com/tarunganwani/timetable/utility v0.0.0-20221009194523-672d34bbca8d/go.mod h1:NZXFdbcXI/nG2DPbh/e1Tv6dwO0lhKWlVcsAnrP+h3o=
+github.com/tarunganwani/timetable/utility v0.0.0-20221009200008-80ce6e9c9a45 h1:tNUo9OGKxf/V0gTuoHtCrYOVWlJBhTfXn6xK8PqBFwQ=
+github.com/tarunganwani/timetable/utility v0.0.0-20221009200008-80ce6e9c9a45/go.mod h1:NZXFdbcXI/nG2DPbh/e1Tv6dwO0lhKWlVcsAnrP+h3o=

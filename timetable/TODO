@@ -1,0 +1,28 @@
+
+//TODO MAJOR - implement certificates on gateway (internet traffic encryption)
+//TODO MAJOR - container respawn logic with K8S or other relevant tech
+//TODO MAJOR - implementation to prevent ddos attack in gateway
+//TODO MAJOR - implement health check between gateway and service discovery
+//TODO MAJOR - figure out a way to include third party module changes [go get, go mod clean, etc]
+
+//TODO MAJOR - automate build and run with makefile or a single go command
+//TODO MAJOR - host all services on different servers and check communication
+//TODO MAJOR - set an aggregate logger service
+//TODO MAJOR - set a CI/CD pipeline
+//TODO MAJOR - automate deployment, fixes/patches
+//TODO MAJOR - refactor gateway service as a whole - divide into packages
+
+//TODO  - check how to facilitate communication amongst docker containers without --net=host option
+// https://stackoverflow.com/questions/45728075/docker-unable-to-access-port-outside-the-container
+
+//TODO  - use messaging queues instead of http communication within among the internal services
+//TODO  - replace in memory model with etcd (distributed doc store)
+//TODO  - write benchmarks
+
+//DONE -- TODO MAJOR - dockerize all apps(gateway, service discovery and timetable service)
+//DONE -- TODO MAJOR - recover from panic in important functions(main, handlers, etc) for graceful exits
+//DONE -- TODO MAJOR - error handling and retries when one of the communicating service goes down
+//DONE -- TODO MAJOR - sevice discovery - write concurrent tests
+//DONE -- TODO MAJOR - run go tools to static analyze race conditions
+//DONE -- TODO MAJOR - fix race condition in model map in service discovery
+//DONE -- TODO MAJOR - write tests for http handlers, models and other packages for all modules
