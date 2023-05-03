@@ -6,6 +6,8 @@
 		{
 			"name"	 : "Monday",
 			"uniform": "REGULAR",
+			"start_time": "13:00",
+			"timezone": "IST",
 			"periods":[
 				{
 					"type" : "1H",
@@ -31,6 +33,8 @@
 		{
 			"name" : "Tuesday",
 			"uniform":"PE",
+			"start_time": "13:00",
+			"timezone": "IST",
 			"periods":[
 				{
 					"type" : "1H",
